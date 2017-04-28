@@ -24,7 +24,7 @@
           <div class="hide-on-med-and-down">
             <div class="links">
               <a href="#about" class="waves-effect">About</a>
-              <a href="#" class="waves-effect">Project</a>
+              <a href="#project" class="waves-effect">Project</a>
               <a href="#ddl" class="waves-effect">DDL</a>
               <a href="#torrent" class="waves-effect">Torrent</a>
               <a href="#" class="dropdown-button waves-effect" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i>Portal</a>
@@ -45,7 +45,7 @@
         <!-- SideNav panel -->
           <ul id="slide-out" class="side-nav">
             <li><a href="#about" class="waves-effect">About</a></li>
-            <li><a href="#" class="waves-effect">Project</a></li>
+            <li><a href="#project" class="waves-effect">Project</a></li>
             <li><a href="#ddl" class="waves-effect">DDL</a></li>
             <li><a href="#torrent" class="waves-effect">Torrent</a></li>
             <div class="divider"></div>
@@ -117,6 +117,34 @@
         </div>
       </div>
 
+      <div id="project" class="modal">
+        <div class="modal-content">
+          <h4>Project</h4>
+          <hr>
+          <br>
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"></i>Spring 2017</div>
+              <div class="collapsible-body">
+                <span><a href="#ddl">Hinako Note</a></span>
+                <br>
+                <span><a href="#ddl">Re:CREATORS</a></span>
+                <br>
+                <span><a href="#ddl">Saenai Heroine no Sodatekata Flat</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">Winter 2016/17</div>
+              <div class="collapsible-body">
+                <span><a href="#ddl">Little Witch Academia</a></span>
+                <br>
+                <span><a href="#ddl">Urara Meirochou</a></span>
+              </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+
       <div id="ddl" class="modal bottom-sheet">
         <div class="video-container">
             <iframe width="853" height="480" src="http://soraddl.skies.space" frameborder="0" allowfullscreen></iframe>
@@ -167,6 +195,8 @@
 
 
       $('.modal').modal();
+
+      $('.collapsible').collapsible();
     });
   </script>
 </html>
