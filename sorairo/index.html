@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/materialize.min.css" type="text/css" media="screen,projection"/>
+    <link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="img/favicon.png">
+    <title>Sora Iro</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="hide-on-med-and-down">
+          <a href=""><img src="img/sorairo(c)Anko.png" alt="Sora Iro" class="responsive-img"></a>
+        </div>
+        <div class="hide-on-large-only">
+          <a href="" data-activates="slide-out" class="button-collapse"><img src="img/sorairo(c)Anko.png" alt="Sora Iro" class="responsive-img"></a>
+        </div>
+
+        <!-- <nav class="transparent"> -->
+          <div class="hide-on-med-and-down">
+            <div class="links">
+              <a href="#about" class="waves-effect">About</a>
+              <a href="#" class="waves-effect">Project</a>
+              <a href="#" class="waves-effect">DDL</a>
+              <a href="#" class="waves-effect">Torrent</a>
+              <a href="#" class="dropdown-button waves-effect" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i>Portal</a>
+                <ul id="dropdown1" class="dropdown-content">
+                  <li><a href="#" class="waves-effect">Portal</a></li>
+                  <li><a href="#" class="waves-effect">Playback</a></li>
+                  <li><a href="#" class="waves-effect">Web IRC</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#" class="waves-effect">Server Tools</a></li>
+                </ul>
+            </div>
+          </div>
+        <!-- </nav> -->
+      </div>
+
+      <!-- side-nav -->
+      <div class="col s1">
+        <!-- SideNav panel -->
+          <ul id="slide-out" class="side-nav">
+            <li><a href="#about" class="waves-effect">About</a></li>
+            <li><a href="#" class="waves-effect">Project</a></li>
+            <li><a href="#" class="waves-effect">DDL</a></li>
+            <li><a href="#" class="waves-effect">Torrent</a></li>
+            <div class="divider"></div>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li>
+                  <a class="collapsible-header">Portal</a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#">Portal</a></li>
+                      <li><a href="#">Playback</a></li>
+                      <li><a href="#">Web IRC</a></li>
+                      <div class="divider"></div>
+                      <li><a href="#">Server Tools</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+      </li>
+          </ul>
+      </div>
+
+      <div id="about" class="modal">
+        <div class="modal-content">
+          <h4>About</h4>
+          <hr>
+          <style type="text/css" media="screen">.justify { text-align: justify;}</style>
+          <div class="justify">
+            Mengudara pada tanggal 16 Juni 2012.
+            <p>
+            <table class="highlight centered responsive-table">
+              <thead>
+                <tr>
+                  <th>Staf Aktif</th>
+                  <th>Posisi</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Anko</td>
+                  <td>Leader, Editor, Timer, QC</td>
+                </tr>
+                <tr>
+                  <td>Mufti</td>
+                  <td>Server Admin</td>
+                </tr>
+                <tr>
+                  <td>Zhara</td>
+                  <td>Translator, Encoder</td>
+                </tr>
+                <tr>
+                  <td>irzie</td>
+                  <td>Translator, Typesetter</td>
+                </tr>
+                <tr>
+                  <td>GinNu</td>
+                  <td>Translator, KFx</td>
+                </tr>
+                <tr>
+                  <td>Yatogami</td>
+                  <td>Encoder</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="page-footer transparent">
+      <div class="sosmed">
+      <center>
+        <a href="https://www.facebook.com/Sorairosubs/" class="tooltipped white-text text-lighten-4" data-position="top" data-delay="50" data-tooltip="Facebook"><i id="facebook" class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
+        <a href="https://twitter.com/Sorairosubs" class="tooltipped white-text text-lighten-4" data-position="top" data-delay="50" data-tooltip="Twitter"><i id="twitter" class="fa fa-twitter-square fa-2x"></i></i></a>&nbsp;
+        <div id="footer">&copy; Sora Iro, 2012-2017 <br>Subbing with <i class="material-icons" id="logoHeart">favorite</i> in Indonesia. All wrongs unreserved.<p>
+      </center>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav({
+          menuWidth: 240,
+          edge: 'left',
+          closeOnClick: true
+      });
+
+
+    $('.dropdown-button').dropdown({
+          inDuration: 300,
+          outDuration: 225,
+          constrainWidth: false, // Does not change width of dropdown to that of the activator
+          // hover: true, // Activate on hover
+          gutter: 0, // Spacing from edge
+          belowOrigin: false, // Displays dropdown below the button
+          alignment: 'left', // Displays dropdown with edge aligned to the left of button
+          stopPropagation: false // Stops event propagation
+      });
+
+
+      $('.modal').modal();
+      $(".dropdown-button").dropdown();
+      $(".dropdown-button").dropdown(open);
+      $(".dropdown-button").dropdown(close);
+      $('.tooltipped').tooltip({delay: 50});
+    });
+  </script>
+</html>
