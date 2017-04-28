@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="assets/css/materialize.min.css" type="text/css" media="screen,projection"/>
+    <!-- <link rel="stylesheet" href="assets/css/pace-theme-flash.css" type="text/css" media="screen,projection"/> -->
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="img/favicon.png">
     <title>Sora Iro</title>
   </head>
-  <body>
+  <body id="fadein">
     <main>
       <div class="content">
         <div class="hide-on-med-and-down">
@@ -24,8 +25,8 @@
             <div class="links">
               <a href="#about" class="waves-effect">About</a>
               <a href="#" class="waves-effect">Project</a>
-              <a href="#" class="waves-effect">DDL</a>
-              <a href="#" class="waves-effect">Torrent</a>
+              <a href="#ddl" class="waves-effect">DDL</a>
+              <a href="#torrent" class="waves-effect">Torrent</a>
               <a href="#" class="dropdown-button waves-effect" data-activates="dropdown1"><i class="material-icons right">arrow_drop_down</i>Portal</a>
                 <ul id="dropdown1" class="dropdown-content">
                   <li><a href="#" class="waves-effect">Portal</a></li>
@@ -45,8 +46,8 @@
           <ul id="slide-out" class="side-nav">
             <li><a href="#about" class="waves-effect">About</a></li>
             <li><a href="#" class="waves-effect">Project</a></li>
-            <li><a href="#" class="waves-effect">DDL</a></li>
-            <li><a href="#" class="waves-effect">Torrent</a></li>
+            <li><a href="#ddl" class="waves-effect">DDL</a></li>
+            <li><a href="#torrent" class="waves-effect">Torrent</a></li>
             <div class="divider"></div>
             <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
@@ -71,11 +72,11 @@
         <div class="modal-content">
           <h4>About</h4>
           <hr>
-          <style type="text/css" media="screen">.justify { text-align: justify;}</style>
           <div class="justify">
+            <p>
             Mengudara pada tanggal 16 Juni 2012.
             <p>
-            <table class="highlight centered responsive-table">
+            <table class="highlight responsive-table">
               <thead>
                 <tr>
                   <th>Staf Aktif</th>
@@ -111,6 +112,20 @@
               </tbody>
             </table>
           </div>
+          <p>
+          Ingin bergabung? Kontak kami di <a href="mailto:recruitment@sorairosubs.com" target="_top">recruitment@sorairosubs.com</a>
+        </div>
+      </div>
+
+      <div id="ddl" class="modal bottom-sheet">
+        <div class="video-container">
+            <iframe width="853" height="480" src="http://soraddl.skies.space" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="torrent" class="modal bottom-sheet">
+        <div class="video-container">
+          <iframe width="853" height="480" src="http://sorator.skies.space/" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -129,6 +144,7 @@
   </body>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <!-- <script src="assets/js/pace.min.js"></script> -->
   <script>
     $(document).ready(function(){
       $(".button-collapse").sideNav({
