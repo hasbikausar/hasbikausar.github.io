@@ -55,35 +55,13 @@ main {
     }
 }
 
-.full-height {
-    height: 100vh;
-}
-
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-.position-ref {
-    position: relative;
-}
-
-.top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-}
-
 .links > a {
     color: #0f6bb6;
     padding: 0 10px;
     font-size: 15px;
-    font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
-    transition: ease 0.5s;
 }
 
 .links > a:hover {
