@@ -17,10 +17,10 @@ main {
 }
 
 #fadein {
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari and Chrome */
+    -o-animation: fadein 10s; /* Opera */
 }
 @keyframes fadein {
     from {
@@ -57,8 +57,9 @@ main {
 
 .links > a {
     color: #0f6bb6;
-    padding: 0 10px;
+    padding: 0 8px;
     font-size: 15px;
+    font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -72,12 +73,34 @@ span > a {
     color: #0f6bb6;
 }
 
+#dropdown1 {
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+
+#dropdown1 > li > a:hover {
+    color: #4498dc;
+}
+
 #email {
+    color: #0f6bb6;
+}
+
+#recruit {
     color: #0f6bb6;
 }
 
 #footer {
     color: #636b6f;
+}
+
+#back-to-top {
+    color: #636b6f;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
 }
 
 #facebook {
@@ -89,5 +112,9 @@ span > a {
 }
 
 #logoHeart {
-  color: #f06292;
+    color: #f06292;
+}
+
+#donation {
+    background-color: #0f6bb6;
 }
