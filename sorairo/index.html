@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/materialize.min.css" type="text/css" media="screen,projection"/>
     <link rel="stylesheet" href="assets/css/pace-theme-flash.css" type="text/css" media="screen,projection"/>
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" media="screen,projection"/>
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/logo.png">
     <title>Sora Iro Fansubs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="generator" content="Atom">
@@ -28,6 +28,33 @@
     <meta name="coverage" content="Worldwide">
   </head>
   <body id="fadein">
+  <div id="fb-root"></div>
+  <script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+  }(document, "script", "twitter-wjs"));
+  </script>
     <main>
       <div class="row">
         <div class="col s3">
@@ -274,6 +301,22 @@
       <div id="ddl" class="modal">
         <div class="video-container">
             <iframe src="http://soraddl.skies.space" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- button sosmed -->
+      <p>
+      <div class="row">
+        <div class="col s3">
+        </div>
+        <div class="col s6">
+          <div class="fb-page" data-href="https://www.facebook.com/Sorairosubs/" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Sorairosubs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sorairosubs/">Sora Iro Fansubs</a></blockquote></div>
+          <span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="twitter-follow-button" href="https://twitter.com/Sorairosubs" data-size="large"> Follow @Sorairosubs</a>
+          </span>
+        </div>
+        <div class="col s3">
         </div>
       </div>
 
