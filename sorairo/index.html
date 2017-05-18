@@ -28,33 +28,34 @@
     <meta name="coverage" content="Worldwide">
   </head>
   <body id="fadein">
-  <div id="fb-root"></div>
-  <script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+      window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
 
-  return t;
-  }(document, "script", "twitter-wjs"));
-  </script>
+      return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
     <main>
       <div class="row">
         <div class="col s3">
@@ -310,7 +311,7 @@
         <div class="col s3">
         </div>
         <div class="col s6">
-          <div class="fb-page" data-href="https://www.facebook.com/Sorairosubs/" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Sorairosubs/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Sorairosubs/">Sora Iro Fansubs</a></blockquote></div>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSorairosubs%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId" width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           <span>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a class="twitter-follow-button" href="https://twitter.com/Sorairosubs" data-size="large"> Follow @Sorairosubs</a>
@@ -387,12 +388,10 @@
       <center>
         <a href="#" id="back-to-top"><i class="material-icons">arrow_upward</i></a>
       </center>
-      <div class="sosmed">
-      <center>
-        <a href="https://www.facebook.com/Sorairosubs/"><i id="facebook" class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
-        <a href="https://twitter.com/Sorairosubs"><i id="twitter" class="fa fa-twitter-square fa-2x"></i></i></a>&nbsp;
-        <div id="footer">Copyleft &copy; 2012-2017 Sora Iro Fansubs. <br>Subbing with <i class="material-icons" id="logoHeart">favorite</i> in Indonesia. All wrongs unreserved.<p>
-      </center>
+      <div id="footer">
+        <center>
+        Copyleft &copy; 2012-2017 Sora Iro Fansubs. <br>Subbing with <i class="material-icons" id="logoHeart">favorite</i> in Indonesia. All wrongs unreserved.<p>
+        </center>
       </div>
     </footer>
 
